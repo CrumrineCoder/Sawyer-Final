@@ -1,0 +1,138 @@
+
+.footer{
+    background: #FAF9F7;
+    box-shadow: 0 -1px 0 0 #F5F5F5;
+    padding: 30px 40px 40px 40px; 
+    clear: both; 
+    overflow: auto; 
+  
+    .footerSocialContainer, .footerLinksContainer{
+      float: left;
+      @include breakpoint(tablet) {
+        float: none; 
+      }
+    }
+    
+    .footerSocialContainer{
+      max-width: 50%;
+      @include breakpoint(tablet) {
+        max-width: 100%;
+        width: 100%;
+      }
+      .footerSocialSlogan{
+        font-size: 16px;
+        color: $dark-grey;
+        letter-spacing: 0;
+        line-height: 25px; 
+        margin: 0px;
+      }
+    
+      .socialHandlesContainer{
+  
+        margin: 20px 0px 25px 0px;
+  
+        .socialHandleIcon{
+          color: #3B8873;
+          list-style: none;
+          padding: 5px;
+          width: 30px; 
+          cursor: pointer;
+          
+          &:hover{
+            opacity: .5;
+          }
+        }
+      }
+  
+      .footerSocialCopyright{
+        font-size: 12px;
+        color: #919EAB;
+        letter-spacing: 0;
+        font-weight: $semiBold;
+        line-height: 18px; 
+        text-transform: uppercase; 
+        @include breakpoint(tablet) {
+          position: absolute;
+          bottom: 40px; 
+        }
+      }
+    }
+  
+    .footerInfoContainer{
+      float: right;
+      margin-top: -20px;
+      .footerDivider{
+        width: calc(100% + 78px);
+        margin-left: -40px;
+        border-top: 1px solid $light-grey;
+        display: none; 
+        
+        @include breakpoint(tablet) {
+            display: block; 
+        }
+  
+        &:last-of-type{
+          margin-bottom: 60px;
+        }
+      }
+      @include breakpoint(tablet) {
+      //  display: flex;
+        justify-content: center;
+        float: none;  
+        width: 100%;
+      }
+  
+      .footerLinksContainer{
+  
+        margin-right: 100px;
+  
+        @include breakpoint(tablet) {
+          margin: 10px 0px 0px 0px;
+        }
+  
+        .footerLinksCategoryButton{
+          float: right; 
+          cursor: pointer; 
+          display: none; 
+          margin-top: 10px;
+          @include breakpoint(tablet) {
+            display: block; 
+          }
+        }
+  
+        .footerLinksCategoryHeader{
+          font-size: 12px;
+          color: $dark-green;
+          letter-spacing: 0;
+          line-height: 39px;
+          margin: 0px; 
+          font-weight: $bold;
+          @include breakpoint(tablet) {
+            font-size: 16px; 
+          }
+        }
+        .footerLinkObscure{
+          @include breakpoint(tablet) {
+            display: none; 
+          }
+        }
+        
+        .footerLinkContainer{     
+          .footerLink{
+            font-size: 12px;
+            color: $dark-grey;
+            letter-spacing: 0;
+            line-height: 39px;
+            text-decoration: none; 
+            display: block;
+            margin-top: 5px;
+            font-weight: $medium;
+  
+            &:hover{
+              color: darken($dark-grey, 30%)
+            }
+          }
+        }
+      }
+    }
+  }

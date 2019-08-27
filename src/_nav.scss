@@ -1,0 +1,89 @@
+
+.nav {
+    // I would consider making the Nav position fixed if the site had more vertical height; 
+  
+    display:-webkit-flex;
+    display:flex;
+    padding: 23px 40px;
+    justify-content:flex-end;
+    border-bottom: 1px solid $light-grey;
+
+    @include breakpoint(tablet) {
+     display: block;
+     padding: 11px 20px;
+    }
+    
+    .leftNavItem{
+      margin-right: auto;
+      @include breakpoint(tablet) {
+        margin: 10px auto;
+        display: block;
+      }
+    }
+    .rightNavContainer{
+      @include breakpoint(tablet) {
+        text-align:  center; 
+      }
+      .rightNavItem{
+        display: inline; 
+        font-size: 12px; 
+        letter-spacing: -.25px;
+        line-height: 19px;
+        text-transform: uppercase; 
+        font-weight: $medium;
+        cursor: pointer; 
+        &:hover{
+          color: darken($dark-grey, 30%)
+        }
+      }
+  
+      .rightNavLinks {
+        .rightNavItem{
+          padding-right: 30px;
+          @include breakpoint(tablet) {
+            padding-right:  10px;
+          }
+          &:last-of-type{
+          padding-right: 20px;
+          margin-right: 20px;
+          @include breakpoint(tablet) {
+            padding-right: 10px;
+            margin-right: 10px;
+          }
+          border-right: 1px solid $dark-grey;
+          }
+        }
+      }
+  
+      .rightNavCart{
+        font-weight: $semiBold;
+        letter-spacing: 0.08px;
+        font-size: 10px; 
+        position: relative;
+        cursor: pointer; 
+        .rightNavCartIcon{
+          position: relative;
+          top: 5px;
+          margin-right: 5px;
+        }
+        .cartNumber{
+          font-size: 10px;
+          color: #FFFFFF;
+          letter-spacing: 0;
+          text-align: center;
+          font-weight: $bold;
+          background: #2FC594;
+          border-radius: 50px;
+          padding: 2px 8px;
+          position: absolute;
+          bottom: 6px;
+          left: 10px;
+        }
+        .rightNavItem{
+          &:last-of-type{
+            margin-left: 3px; 
+          }
+        }
+      }
+    }
+  }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="20px" viewBox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>cart_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Macarons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Macarons-1" transform="translate(-926.000000, -25.000000)" stroke="#595959">
+            <g id="Group-3">
+                <g id="Group-4" transform="translate(927.000000, 26.000000)">
+                    <g id="cart_icon">
+                        <rect id="Rectangle-path" fill="#FFFFFF" x="0.282186667" y="2.9784" width="21.66032" height="14.8431"></rect>
+                        <path d="M15.2298667,3.2481 C15.2298667,4.9356 13.89168,6.3036 12.2422667,6.3036 L9.98242667,6.3036 C8.33272,6.3036 6.99482667,4.9356 6.99482667,3.2481 L6.99482667,3.2481 C6.99482667,1.5606 8.33272,0.1926 9.98242667,0.1926 L12.2422667,0.1926 C13.8913867,0.1926 15.2298667,1.5606 15.2298667,3.2481 L15.2298667,3.2481 L15.2298667,3.2481 Z" id="Shape"></path>
+                        <path d="M0.282186667,2.9784 L0.282186667,5.5413 C0.282186667,7.968 2.20616,9.9354 4.57864,9.9354 L17.64576,9.9354 C20.0185333,9.9354 21.9422133,7.968 21.9422133,5.5413 L21.9422133,2.9784 L0.282186667,2.9784 L0.282186667,2.9784 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

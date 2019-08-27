@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+$dark-grey: #595959;
+$dark-green: #3B8873;
+$light-grey: #E5E5E5;
+$light-green: #5DAD93;
+$lightest-green: #2FC594;
+
+$bold: 700;
+$semiBold: 600;
+$medium: 500;
+$regular: 400;
+
+// Would've done min-width / mobile-first approach if I were mobile designs first, and Sawyer also seems to have a focus on desktop users but I would ask the project manager on this one. 
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (max-width: 70em) { @content ; }
+ }
+  @else if $point == laptop {
+    @media (max-width: 64em) { @content ; }
+ }
+   @else if $point == tablet {
+    @media (max-width: 50em) { @content ; }
+ }
+  @if $point == phablet {
+    @media (max-width: 38.5em)  { @content ; }
+ }
+}
+
+@import "_nav";
+@import "_cartSlider";
+@import "_menu";
+@import "_footer";
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: $dark-grey;
+  font-weight: $regular; 
+}
+
+html, body {
+  min-height: 100vh;
+}
+html,body{
+  margin:0;
+  }
+#root {
+  min-height: 100vh;
+}
+
+.wrap{
+  position: relative;
+}
+
+.bodyContainer{
+  margin: 0px 42px; 
+}
+
+.mask{
+  opacity: .22;
+}

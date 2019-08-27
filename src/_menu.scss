@@ -1,0 +1,125 @@
+
+.menu{
+    margin-bottom: 50px; 
+  
+    .menuHeader{
+      font-weight: $semiBold;
+      font-size: 24px;  
+      letter-spacing: 0;
+      line-height: 35px; 
+      margin-top: 30px;
+      margin-bottom: 20px; 
+    }
+  
+    .menuItem{
+      display: flex;
+      padding: 10px 0px;
+      @include breakpoint(tablet) {
+        display: block;
+      }
+      &:not(:last-of-type){
+        box-shadow: 0 1px 0 0 #F3F0EB;
+      }
+  
+      .menuItemImage{
+        object-fit: contain;
+        align-self: flex-start;
+        // For Firefox's auto resizing
+      
+        @include breakpoint(tablet) {
+          display: block;
+          margin: 0 auto; 
+        }
+      }
+  
+      .menuItemInfo{
+        flex: 1 1 auto;
+        margin: 0px 20px;
+        font-weight: $medium; 
+        line-height: 30px;
+        letter-spacing: 0;
+        .menuItemName{
+          color: #5DAD93;
+          font-size: 20px;
+          margin: 0px;
+        }
+    
+        .menuItemAmount{
+          margin-top: 0px;
+          margin-bottom: 12px;
+          color: $dark-grey;
+          font-size: 16px; 
+        }
+  
+      }
+  
+      .menuItemDescription{
+        margin-top: 0px;
+        font-size: 14px;
+        color: $dark-grey;
+        letter-spacing: 0;
+        line-height: 21px; 
+      }
+  
+      .readMore{
+        font-size: 12px;
+        color: $dark-green;
+        letter-spacing: 0;
+        font-weight: $semiBold; 
+        cursor: pointer; 
+        line-height: 18px; 
+        &:hover{
+          color: darken($dark-green, 30%)
+        }
+      }
+  
+      .menuItemPayment{
+        background: #FAF9F7;
+        border-radius: 4px;
+        padding: 22px 25px;
+        height: 118px;
+        flex: 0 0 220px;
+  
+        .menuItemPaymentPrice{
+          font-size: 20px;
+          color: $dark-grey;
+          letter-spacing: 0;
+          text-align: center;
+          font-weight: $semiBold; 
+          margin: 0px; 
+          margin-top: 11px;
+          margin-bottom: 27px; 
+          line-height: 30px;
+        }
+  
+        .addToCartButton{
+          cursor: pointer;
+          background: $light-green;
+          border-radius: 2px;
+          padding: 14px; 
+          border: 0px; 
+    
+          font-size: 13px;
+          color: #FFFFFF;
+          letter-spacing: 0.5px;
+          text-align: center;
+          line-height: 22.5px;
+    
+          width: 175px;
+          height: 50px;
+    
+          margin: 0 auto;
+          display: block; 
+  
+          &:hover:not(.addedToCart){
+            background: #3B8873;
+          }
+        }
+  
+        .addedToCart{
+          background: $lightest-green;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
